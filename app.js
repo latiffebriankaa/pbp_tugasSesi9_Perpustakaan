@@ -111,7 +111,7 @@ app.use((req, res) => {
 });
 
 app.use((err, req, res, next) => {
-  console.error("Unhandled error:", err);
+  console.error("error:", err);
   res.status(500).json({ error: "server error", detail: err.message });
 });
 
